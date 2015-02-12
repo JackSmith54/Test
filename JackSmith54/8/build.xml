@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- build file for SimpleLAngModel -->
+
+<project name="SimpleLangModel" default="build" basedir=".">
+    <target name="build">
+        <javac srcdir="." />
+    </target>
+</project>

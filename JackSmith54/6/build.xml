@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- build file BracketCheck -->
+
+<project name="BracketCheck" default="build" basedir=".">
+    <target name="build">
+        <javac srcdir="." />
+    </target>
+</project>

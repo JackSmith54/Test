@@ -1,0 +1,37 @@
+echo "@@@@@  23 23 + = 46" 
+echo "23 23 +" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  23 23 - = 0" 
+echo "23 23 -" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  17 4 / = 4" 
+echo "17 4 /" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  17 4 % = 1" 
+echo "17 4 %" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  15 4 * = 60" 
+echo "15 4 *" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  23 ~ = -23"
+echo "23 ~" >RPNCalc.txt | java  RPNCalc
+
+echo "@@@@@  0 4 /  = 0" 
+echo "0 4 / " >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  4 0 /  = UNDEFINED" 
+echo "4 0 / " >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  4   5   * = 20"
+echo "  4    5    *" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  4 5 * + = ERROR"
+echo "4 5 * +" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  4 5 6 * = ERROR OR 30"
+echo "4 5 6 *" >RPNCalc.txt | java  RPNCalc
+
+echo "@@@@@  23 23 + 26 ~ + = 20"
+echo "23 23 + 26 ~ +" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  1 2 3 4 5 6 * * + + ~ + = -124"
+echo "1 2 3 4 5 6 * * + + ~ +" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  1 2 3 4 5 6 7 8 9 10 11 12 * * * * * * * * * * * = 479001600"
+echo "1 2 3 4 5 6 7 8 9 10 11 12 * * * * * * * * * * *" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  1 2 3 4 5 6 7 8 9 10 11 12 * * * * * * * * * * * = ERROR OR -898433024 OR 6402373705728000"
+echo "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 * * * * * * * * * * * * * * * * *" >RPNCalc.txt | java  RPNCalc
+echo "@@@@@  1 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ = -1"
+echo "1 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~" >RPNCalc.txt | java  RPNCalc
+
+echo "@@@@@  1 2 3 + 5 6 * ~ + 34 - - = 60"
+echo "1 2 3 + 5 6 * ~ + 34 - -" >RPNCalc.txt | java  RPNCalc

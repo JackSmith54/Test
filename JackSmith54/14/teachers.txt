@@ -1,0 +1,7 @@
+TeacherA - english,Spanish
+TeacherB - Maths,French,geog,irish
+TeacherC - German,maths,english,irish,french
+TeacherD - Wood,Biology
+TeacherE - Irish,Geog,German,Spanish
+TeacherF - History
+TeacherG - English, Maths
